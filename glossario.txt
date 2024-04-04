@@ -1,0 +1,118 @@
+ISO/OSI:
+TCP/IP:
+
+
+Livelli e Servizi:
+
+SAP: Service Access Point.
+IDU: Interface Data Unit.
+SDU: Service Data Unit.
+ICI: Interface Control Information.
+PDU: Protocol Data Unit.
+Relazione tra Servizi e Protocolli:
+
+Il servizio implementato dal protocollo a livello k viene fornito al livello k+1.
+Relazione tra Livelli in una Interfaccia:
+
+SAP: Service Access Point.
+IDU: Interface Data Unit.
+SDU: Service Data Unit.
+ICI: Interface Control Information.
+PDU: Protocol Data Unit.
+Servizi con Connessione e senza Connessione:
+
+Esempi di servizi con connessione e senza connessione.
+Primitive per i Servizi:
+
+Esempi di primitive per realizzare un semplice servizio con connessione.
+Il Modello ISO-OSI:
+
+Il modello OSI è composto da 7 livelli.
+Modello ISO-OSI:
+
+Organizzazione a livelli che definisce un grado di astrazione.
+I livelli devono corrispondere a funzioni definite.
+I confini dei livelli devono minimizzare il flusso di informazioni.
+Livello Fisico:
+
+Riguarda la trasmissione dei bit sul canale fisico di trasmissione.
+Livello Data Link:
+
+Trasforma la linea fisica in una linea in cui gli errori di trasmissione vengano sempre segnalati.
+Divide le informazioni in pacchetti e li trasmette attraverso il mezzo fisico, attendendo un segnale di “avvenuta ricezione” (ack).
+Livello Network:
+
+Controlla il flusso di pacchetti.
+Gestisce la congestione della rete.
+Livello Transport:
+
+Accetta dati dal livello superiore, li spezza in parti più piccole e li trasmette, assicurando un servizio privo di errori e l’ordine corretto di ricomposizione.
+Livello Session:
+
+Controlla il dialogo tra due macchine.
+Gestisce il controllo dei token.
+Livello Presentation:
+
+Traduzione dei dati che viaggiano sulla rete in formati astratti.
+Livello Application:
+
+Servizi legati alle applicazioni.
+Esempi di applicazioni: File Transfer, Posta elettronica, World Wide Web, Multimedialità, File System distribuiti, ecc.
+TCP/IP vs OSI:
+
+Confronto tra i modelli TCP/IP e OSI.
+TCP/IP:
+
+Livello di Trasporto: TCP (Transmission Control Protocol), UDP (User Datagram Protocol).
+Livello di Rete: IP (Internet Protocol).
+Confronto tra OSI e TCP/IP:
+
+Concetti centrali nel modello OSI.
+Servizi, Interfacce, Protocolli.
+Il modello TCP/IP originale non aveva una chiara distinzione tra questi concetti.
+Problemi del modello OSI:
+
+Momento sbagliato, cattiva tecnologia, non buone implementazioni, cattiva politica.
+Problemi del modello TCP/IP:
+
+Non è generale.
+Non distingue tra livelli, interfacce e protocolli.
+Il livello Host-to-Network non è un livello.
+Non sono definiti i livelli Fisico e Data link.
+Modello OSI e Protocolli reali:
+
+Relazione tra il modello OSI e i protocolli reali.
+Modello Ibrido:
+
+Modello basato su cinque livelli.
+Esempi di reti:
+
+ARPANET, NFSNET, Internet.
+Reti Connection-Oriented: X.25, Frame Relay, e ATM.
+Ethernet.
+Wireless LAN 802.11.
+ARPANET:
+
+La struttura originale di ARPANET.
+NSFNET:
+
+La dorsale NSFNET nel 1988.
+Uso di Internet:
+
+Applicazioni tradizionali (1970 – 1990).
+E-mail, News, Remote login, File transfer.
+Reti ATM:
+
+Asynchronous Transfer Mode (ATM).
+Principi delle reti ATM.
+Il Modello ATM:
+
+Livelli e sottolivelli ATM e le loro funzioni.
+Ethernet:
+
+Architettura originale di Ethernet.
+LAN Wireless:
+
+Rete Wireless con una stazione base.
+Rete wireless ad hoc.
+Una rete multicella 802.11.

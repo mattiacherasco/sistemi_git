@@ -1,0 +1,69 @@
+[guardo slide]
+    molte meno cose dentro l'header
+    ipv4 2^32 **ipv6 2^128 nIpDisponibii
+    ipv4 23byte **ipv6 40byte
+    loopback ipv4 127.0.0.1    ::1
+    this host ipv4 0.0.0.0     ::
+      
+    STRUTTURA: 
+    Uguali a ipv4
+        Version --identifica se ipv4 o ipv6 [4bit]
+        Hop limit(time to live) --numero massimo di hop che puo fare un programma [8bit]
+        
+    Diversi
+        Payload length --identifica la lunghezza dei dati [diverso da ipv4 perche l'header ha lunghezza fissa]    
+        Next header --punta al byte iniziale dell'header successivo[se ultimo ha un numero che corrisponde al campo protocol dell'ipv4]
+        Traffic class --serie di valori statici che ha la funzione di distinguere il compito del datagramma
+        Flow label --scrive sul datagramma se un messaggio segue un percorso particolare nella rout
+        MANCA LA CHECKSUM[richiede un grande dispendio energetico] --il controllo errori viene affidato al livello trasporto che fa i       
+        controlli sugi host
+        
+    Transizione: 
+        attualmente il grosso di internet usa ipv4, ma in certe aree si usa solo ipv6
+        problemi:
+            host ipv6 che comuinca con host ipv4
+            due host ipv6 che comunicano tra loro, ma sono divis da un ipv4
+        Transition strategies
+            Dual stack
+                nel tcp/ip sono implementati entrambi, quindi si può decidere quale si vuole usare
+            Tunneling
+                risolve il secondo problema il router trasforma il messaggio in ipv6 nel payload di un datagramma ipv4 unendo poi l'header  
+                si ottiene un vero e proprio messaggio in ipv4
+            Header translation
+                un router avrà la funzione di traduttore del messaggio[non sarà una traduzione perfetta, ma la fa il più fedele possibile]
+
+    1111:2222:3333:4444:5555:6666:7777:8888/64
+    
+    32 bit per l'area geografica
+    32 bit per le sottoreti
+    64 bit per l'host [circa 25000 host per m^2]
+    
+    non esistono più ipprivati[ha pro e contro] tutti pubblici tutti vedono tutti
+    indirizzo unicast:
+        inidirizzo assegnato a un host specifico
+        3 bit fissati[010]identificativi
+        5 bit identificano l'agenzia titolare dell'indirizzo ip
+        16 bit identificano il provider che ci ha assegnato l'indirizzo ip
+        24 bit id univoco dell'utente [privacy non esiste più]
+        32 bit per sottoreti
+        48 bit per identificare i nodi
+    
+   
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            
+                
+                
+                
+                
+                
+                
+                
+                
